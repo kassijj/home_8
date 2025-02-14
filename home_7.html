@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>CSS Responsive Layout</title>
+
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                .row:after{
+                    content: "";
+                    display: table;
+                    clear:both;
+                }
+
+                p {
+                    font-family: arial;
+                    font-size: 18px;
+                }
+
+                h1, h2, h3, h4, h5, h6{
+                    font-family: 'fjalla One' sans-serif;
+                }
+
+
+                /* This is the style for the header section*/
+.header-row{
+background-color:#333;
+padding: 20px 20px 0px 20px;
+text-align: center;
+overflow: hidden;
+
+}
+
+
+header a.logo{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+header a:hover{
+    opacity: 80%;
+}
+
+@media screen and (max-width: 600px){
+    .column.side, .column.main{
+        width: 100%
+    }
+}
+
+/* When the device is less than 600px, the links in the menu will stack on top of eachother, instead of next to eachother. */
+
+@media screeb and(max-width:600px){
+    .horizontal-menu a{
+        float: none;
+        width: 100%;
+    }
+}
+
+/*This is the style for the horizontal menu*/
+div.horizontal-menu{
+    overflow: hidden;
+    background-color:#333;
+    float: right;
+
+}
+.horizontal-menu a{
+    float: left;
+    display:block ;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+
+}
+/* This is the style for the hover state*/ 
+.horizontal-menu a:hover{
+   background-color: #f1f1f1;
+   color: black;
+
+}
+/* Create 3 Columns and they float next to eachother. */
+.column{
+    float: left;
+    padding: 20px ;
+}
+/* Left and right side bar */
+.column.side{
+    width: 25%;
+background-color: #c3c3c3;
+
+}
+.column.copyright{
+   width: 100%; 
+   background-color: black;
+   color: white;
+}
+.left{
+    width: 50%; 
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+}
+.right{
+    width: 50%; 
+    padding: 10px;
+    font-size: 18px;
+    float: right;  
+}
+a.copyright{
+    color: white;
+
+}
+a:hover{
+    color: #d3d3d3;
+    text-decoration: none;
+}
+/* Main content area*/
+
+.column.main{
+    width: 50%;
+}
+
+div.footer{
+    width: 33.3%;
+    background-color: #d3d3d3;
+    border-left: 2px solid white;
+
+}
+.column.left{
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    float: left;
+   color: white;
+}
+
+.column.right{
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    float: right;
+}
+            </style>
+        </head>
+        <body>
+
+<header>
+
+    <div class="header-row">
+
+        <a class="logo" title="lotus-flower-logo" href="#"><img title="lotus-flower-logo" alt="lotus-flower-logo" 
+            src="lotus-flower-logo.png" width="150px" height="81px"/></a>
+    
+        <div class="horizontal-menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR TEAM</a>
+            <a href="#">CUSTOMER SERVICE</a>
+            <a href="#">SERVICES</a>
+            <a href="#">BLOG</a>
+            <a href="#">SHOP</a>
+            <a href="#">CONTACT US</a>
+
+
+        </div>
+    </div>
+</header>
+
+<div class="row">
+    <div class="column side">
+        <h2>Side bar</h2>
+        
+        <img title="Beautiful Purple Rose" alt="Front of a Purple Rose" src="purple-rose.jpg" width="100%" height= "220px"/>
+
+    
+    
+    </div>
+<div class="column main">
+    <h1>Working with CSS Layout</h1>
+    <p>The viewport meta tag is located in the head of a web page. This meta tag is going to tell the browser how to show a web page on different devices. The most important is defining how the HTML web page should scale and fit on any screen, from a desktop to a very small device like a phone.</p>
+    <h2>Working with Images</h2>
+    <p>The img tag is going to use 2 required attributes</p>
+    <ul>
+        <li>Source= src, is going to be used to place te path where the image is.</li>
+        <li>Alternate tag= alt, is used for SEO to describe the image and also is going to show a text in the browser if the image can't be found.
+        </li>
+        <li>Title attribute, we are going to create a specific sentence using the main keyword of the page.</li>
+    </ul>
+
+    <img title="Place a Nice Title using Keywords" alt="Describe the image using the main keyword" src="Path where the image is" />
+
+    <img title="Relaxing beach vacation" alt="Holiday beach vacation relaxing on the sand" src="holiday-beach-vacation.png" width="100%" height=""/>
+
+    <img title="Peeled Orange" alt="Oranges peeled" src="Oranges-displayed.jpg" width="100%" height=""/>
+</div>
+
+<div class="column side">
+    <h2>Side bar</h2>
+    <img title="A woman riding a horse" alt="A woman riding a horse on a field" src="woman-riding-a-horse.jpg" width="100%" height="220px"/>
+</div>
+</div>
+
+<footer>
+    <div class="column footer">
+        <h2>Get in touch</h2>
+        <h3>Lotus Flower</h3>
+        <img title="lotus-flower-logo" alt="lotus-flower-logo" 
+            src="lotus-flower-logo.png" width="200px" height="107 px"/></a>
+            <p><strong>Phone Number: </strong><a href="tel:5614050992"> 561.405.0092</a></p>
+            <p><strong>Email: </strong><a href="mailto:kassij.0327@gmail.com">kassij.0327@gmail.com</a></p>
+    </div>
+
+
+    <div class="column footer">
+        <h3>Column 2</h3>
+    </div>
+
+
+    <div class="column footer">
+        <h3>Column 3</h3>
+    </div>
+
+</footer>
+
+<div class="column copyright">
+    <div class="column left">
+<p> © All rights reserved to Jhosmarty </p> 
+</div>    
+<div class="column right">
+<p style="float: right;">  <a class="copyright" href="#">Privacy Policy</a> | <a class="copyright" href="#">Terms &Conditions</a> | <a class="copyright" href="#">Blog</a></p>
+</div>
+</div>
+        </body>
+    </html>
