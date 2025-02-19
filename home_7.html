@@ -4,147 +4,11 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>CSS Responsive Layout</title>
-
+            <!-- this is a link to a external css file-->
+             <link rel="stylesheet" type="text/css" href="css/style.css" >
+             <link rel="stylesheet" type="text/css" href="css/horizontal-menu/horizontal-menu.css" >
             <style>
-                *{
-                    box-sizing: border-box;
-                }
-                .row:after{
-                    content: "";
-                    display: table;
-                    clear:both;
-                }
-
-                p {
-                    font-family: arial;
-                    font-size: 18px;
-                }
-
-                h1, h2, h3, h4, h5, h6{
-                    font-family: 'fjalla One' sans-serif;
-                }
-
-
-                /* This is the style for the header section*/
-.header-row{
-background-color:#333;
-padding: 20px 20px 0px 20px;
-text-align: center;
-overflow: hidden;
-
-}
-
-
-header a.logo{
-    float: left;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-}
-
-header a:hover{
-    opacity: 80%;
-}
-
-@media screen and (max-width: 600px){
-    .column.side, .column.main{
-        width: 100%
-    }
-}
-
-/* When the device is less than 600px, the links in the menu will stack on top of eachother, instead of next to eachother. */
-
-@media screeb and(max-width:600px){
-    .horizontal-menu a{
-        float: none;
-        width: 100%;
-    }
-}
-
-/*This is the style for the horizontal menu*/
-div.horizontal-menu{
-    overflow: hidden;
-    background-color:#333;
-    float: right;
-
-}
-.horizontal-menu a{
-    float: left;
-    display:block ;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 20px;
-    text-decoration: none;
-
-}
-/* This is the style for the hover state*/ 
-.horizontal-menu a:hover{
-   background-color: #f1f1f1;
-   color: black;
-
-}
-/* Create 3 Columns and they float next to eachother. */
-.column{
-    float: left;
-    padding: 20px ;
-}
-/* Left and right side bar */
-.column.side{
-    width: 25%;
-background-color: #c3c3c3;
-
-}
-.column.copyright{
-   width: 100%; 
-   background-color: black;
-   color: white;
-}
-.left{
-    width: 50%; 
-    padding: 10px;
-    font-size: 18px;
-    float: left;
-}
-.right{
-    width: 50%; 
-    padding: 10px;
-    font-size: 18px;
-    float: right;  
-}
-a.copyright{
-    color: white;
-
-}
-a:hover{
-    color: #d3d3d3;
-    text-decoration: none;
-}
-/* Main content area*/
-
-.column.main{
-    width: 50%;
-}
-
-div.footer{
-    width: 33.3%;
-    background-color: #d3d3d3;
-    border-left: 2px solid white;
-
-}
-.column.left{
-    width: 50%;
-    padding: 10px;
-    font-size: 14px;
-    float: left;
-   color: white;
-}
-
-.column.right{
-    width: 50%;
-    padding: 10px;
-    font-size: 14px;
-    float: right;
-}
+                /* this an internal css file */
             </style>
         </head>
         <body>
@@ -154,7 +18,7 @@ div.footer{
     <div class="header-row">
 
         <a class="logo" title="lotus-flower-logo" href="#"><img title="lotus-flower-logo" alt="lotus-flower-logo" 
-            src="lotus-flower-logo.png" width="150px" height="81px"/></a>
+            src="image/lotus-flower-company-logo.png" width="350px" height="61px"/></a>
     
         <div class="horizontal-menu">
             <a href="#">HOME</a>
@@ -175,7 +39,7 @@ div.footer{
     <div class="column side">
         <h2>Side bar</h2>
         
-        <img title="Beautiful Purple Rose" alt="Front of a Purple Rose" src="purple-rose.jpg" width="100%" height= "220px"/>
+        <img title="Beautiful Purple Rose" alt="Front of a Purple Rose" src="image/purple-rose.jpg" width="100%" height= "220px"/>
 
     
     
@@ -194,35 +58,62 @@ div.footer{
 
     <img title="Place a Nice Title using Keywords" alt="Describe the image using the main keyword" src="Path where the image is" />
 
-    <img title="Relaxing beach vacation" alt="Holiday beach vacation relaxing on the sand" src="holiday-beach-vacation.png" width="100%" height=""/>
+    <img title="Relaxing beach vacation" alt="Holiday beach vacation relaxing on the sand" src="image/holiday-beach-vacation.png" width="100%" height=""/>
 
     <img title="Peeled Orange" alt="Oranges peeled" src="Oranges-displayed.jpg" width="100%" height=""/>
 </div>
 
 <div class="column side">
     <h2>Side bar</h2>
-    <img title="A woman riding a horse" alt="A woman riding a horse on a field" src="woman-riding-a-horse.jpg" width="100%" height="220px"/>
+    <img title="A woman riding a horse" alt="A woman riding a horse on a field" src="image/woman-riding-a-horse.jpg" width="100%" height="220px"/>
 </div>
 </div>
 
 <footer>
     <div class="column footer">
         <h2>Get in touch</h2>
-        <h3>Lotus Flower</h3>
+        <h3>Lotus Flower Company</h3>
         <img title="lotus-flower-logo" alt="lotus-flower-logo" 
-            src="lotus-flower-logo.png" width="200px" height="107 px"/></a>
-            <p><strong>Phone Number: </strong><a href="tel:5614050992"> 561.405.0092</a></p>
-            <p><strong>Email: </strong><a href="mailto:kassij.0327@gmail.com">kassij.0327@gmail.com</a></p>
+            src="image/lotus-flower-logo.png" width="200px" height="107 px"/></a>
+            <p><strong>Phone Number: </strong><a href="tel:5614050992"> 561.405.0092</a><br/>
+           <strong>Email: </strong><a href="mailto:kassij.0327@gmail.com">kassij.0327@gmail.com</a><br /><strong>Address:</strong>145 SW 74 St. Fort Lauderdal, Fl 33314</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7150.450430559439!2d-80.15933422450672!3d26.351576683979673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c24d5909985%3A0x24fcf86533e0f2f0!2s7146%20Beracasa%20Way%2C%20Boca%20Raton%2C%20FL%2033433!5e0!3m2!1sen!2sus!4v1739926067445!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    
+    <div class="column footer">
+        <h2>Follow Us Youtube</h2>
+        <iframe width="100%" height="550
+        " src="https://www.youtube.com/embed/y8XFyDeaWH4" title="A neglected stray dog lived by the garbage dump, skeletal like a bat, no one willing to come near." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
 
     <div class="column footer">
-        <h3>Column 2</h3>
-    </div>
-
-
-    <div class="column footer">
-        <h3>Column 3</h3>
+        <h2>Important Links</h2>
+        <ul class="footer-links">
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank"               
+                href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+            <li class="footer-links"><a class="footer-links" title="A neglected stray dog" target="_blank" 
+                 href="https://www.youtube.com/embed/y8XFyDeaWH4">Yahoo</a></li>
+           
+        </ul>
     </div>
 
 </footer>

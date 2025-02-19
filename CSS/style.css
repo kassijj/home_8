@@ -1,0 +1,121 @@
+              *{
+                    box-sizing: border-box;
+                }
+                .row:after{
+                    content: "";
+                    display: table;
+                    clear:both;
+                }
+
+                p {
+                    font-family: arial;
+                    font-size: 18px;
+                }
+
+                h1, h2, h3, h4, h5, h6{
+                    font-family: 'fjalla One' sans-serif;
+                }
+
+
+                /* This is the style for the header section*/
+.header-row{
+background-color:#333;
+padding: 20px 20px 0px 20px;
+text-align: center;
+overflow: hidden;
+
+}
+
+
+header a.logo{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+header a:hover{
+    opacity: 80%;
+}
+
+@media screen and (max-width: 600px){
+    .column.side, .column.main{
+        width: 100%
+    }
+}
+
+/* When the device is less than 600px, the links in the menu will stack on top of eachother, instead of next to eachother. */
+
+@media screeb and(max-width:600px){
+    .horizontal-menu a{
+        float: none;
+        width: 100%;
+    }
+}
+
+/*This is the style for the horizontal menu*/
+
+
+
+/* Create 3 Columns and they float next to eachother. */
+.column{
+    float: left;
+    padding: 20px ;
+}
+/* Left and right side bar */
+.column.side{
+    width: 25%;
+background-color: #c3c3c3;
+
+}
+.column.copyright{
+   width: 100%; 
+   background-color: black;
+   color: white;
+}
+.left{
+    width: 50%; 
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+}
+.right{
+    width: 50%; 
+    padding: 10px;
+    font-size: 18px;
+    float: right;  
+}
+a.copyright{
+    color: white;
+
+}
+a:hover{
+    color: #d3d3d3;
+    text-decoration: none;
+}
+/* Main content area*/
+
+.column.main{
+    width: 50%;
+}
+
+div.footer{
+    width: 33.3%;
+    background-color: #d3d3d3;
+    border-left: 2px solid white;
+
+}
+.column.left{
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    float: left;
+   color: white;
+}
+
+.column.right{
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    float: right;
+}

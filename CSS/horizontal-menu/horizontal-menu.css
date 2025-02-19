@@ -1,0 +1,41 @@
+div.horizontal-menu{
+    overflow: hidden;
+    background-color:#333;
+    float: right;
+
+}
+.horizontal-menu a{
+    float: left;
+    display:block ;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+
+}
+/* This is the style for the hover state*/ 
+.horizontal-menu a:hover{
+   background-color: #f1f1f1;
+   color: black;
+}
+
+/* Begining of the footer vertical navigatin bar */
+
+ul.footer-links{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 200px;
+background-color: white;
+
+}
+
+li.footer-links a.footer-links{
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+li.footer-links a.footer-links:hover{
+    background-color: #d3d3d3;
+}
